@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Course Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .course-card {
+            display: flex;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px;
+        }
+
+        .course-image {
+            max-width: 300px;
+            flex-shrink: 0;
+        }
+
+        .course-content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .course-card {
+                flex-direction: column;
+            }
+
+            .course-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="course-card">
+    <div class="course-image">
+        <img src="https://placekitten.com/300/200" alt="Course Image">
+    </div>
+    <div class="course-content">
+        <h2>Course Name</h2>
+        <p>Course Description goes here. Write a brief description of the course content and what learners can expect.</p>
+    </div>
+</div>
+
+</body>
+</html>
